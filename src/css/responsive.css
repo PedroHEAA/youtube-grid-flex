@@ -1,0 +1,13 @@
+@media(min-width: 1919px){
+    .video-destaque iframe{
+        height: 740px;
+    }
+
+    .video-destaque-info{
+        font-size: 23px;
+    }
+
+    .search{
+        width: 900px;
+    }
+}

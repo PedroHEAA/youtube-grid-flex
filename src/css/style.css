@@ -1,0 +1,141 @@
+body{
+    min-height: 100vh;
+}
+
+.header{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181818;
+    height: 94px;
+    padding-inline: 37px;
+}
+
+.header button{
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background-color: #181818;
+    border-radius: 50%;
+}
+
+.fa-bars{
+    font-size: 24px;
+}
+
+.header button:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 10px;
+}
+
+.fa-youtube{
+    font-size: 23px;
+    color: red;
+}
+
+.youtube-name{
+    color: white;
+}
+
+.search{
+    width: 100%;
+    min-width: 600px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-left: -200px;
+}
+
+.icons{
+    color: white;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.icons i:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 50%;
+}
+
+.icons i{
+    padding: 5px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "video-destaque promotion"
+    "video-destaque videos";
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: 70px 1fr;
+    padding: 0px 37px 30px;
+    background-color: #181818;
+    min-height: 100vh;
+}
+
+.video-destaque{
+    grid-area: video-destaque;
+}
+
+.video-destaque iframe{
+    width: 100%;
+    min-width: 640px;
+    min-height: 560px;
+    margin-bottom: 16px;
+    padding-right: 17px;
+}
+
+.video-destaque-info{
+    width: 100%;
+    min-width: 543px;
+    color: white;
+}
+
+.video-destaque-info h2{
+    margin-bottom: 20px;
+}
+
+.video-destaque-info .views{
+    margin-bottom: 12px;
+}
+
+.promotion{
+    grid-area: promotion;
+}
+
+.videos{
+    margin-top: 20px;
+    grid-area: videos;
+    width: 100%;
+    min-width: 101px;
+}
+
+.video-bar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.video-bar .video{
+    max-width: 168px;
+    max-height: 94px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.video-bar .info-videos .title{
+    font-size: 20px;
+    color: white;
+}
+
+.video-bar .info-videos p{
+    color: #747474;
+    font-weight: 500;
+}
+
+
